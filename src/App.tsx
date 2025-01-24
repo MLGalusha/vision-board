@@ -1,35 +1,30 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import "./App.css";
+import napoleon from "./assets/napoldon.jpg";
+import code from "./assets/coding.jpg";
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <>
+      <div>Vision Board</div>
+      <div>The fog is where the learning happens.</div>
       <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+        It's not about big leaps--it's about staying in motion, even if it's a
+        shuffle forward.
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
+      <div>
+        The map might feel hazy now, but the act of walking is what brings it
+        into focus.
       </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      <div>
+        Home isn't where you're from, it's where you find light when all grows
+        dark.
+      </div>
+      <div>It's not victory that makes a man. It's his defeats.</div>
+      <div>Wise men read books about history. Strong men write them.</div>
+      <img src={napoleon} className="napoleon" />
+      <img src={code} className="code" />
     </>
-  )
+  );
 }
 
-export default App
+export default App;
